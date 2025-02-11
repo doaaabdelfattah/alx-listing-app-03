@@ -11,7 +11,6 @@ const Card: React.FC<CardProps> = ({
   price,
   offers,
   image,
-  discount = "0",
 }) => {
   return (
     <section className="flex">
@@ -28,8 +27,11 @@ const Card: React.FC<CardProps> = ({
         </div>
         {/* ============= 1 . Categories ============ */}
         <div className="flex flex-wrap justify-start items-start py-3 gap-1">
-          {category.map((cat) => (
-            <div className="bg-primary-light-grey rounded-2xl py-[6px] px-[13px]">
+          {category.map((cat, i) => (
+            <div
+              className="bg-primary-light-grey rounded-2xl py-[6px] px-[13px]"
+              key={i}
+            >
               <p className="text-xs font-medium">{cat}</p>
             </div>
           ))}

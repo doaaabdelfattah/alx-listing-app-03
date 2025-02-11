@@ -5,11 +5,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
 import Link from "next/link";
 import { useRouter } from "next/router";
 const Slider = () => {
-  const router = useRouter(); // Get the current route
+  // const router = useRouter(); // Get the current route
 
   const categories = [
     { icon: "/assets/icons/living-room 1.svg", label: "Rooms", link: "/" },

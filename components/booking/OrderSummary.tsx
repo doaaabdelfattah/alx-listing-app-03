@@ -1,12 +1,22 @@
-const OrderSummary: React.FC<{ bookingDetails: any }> = ({ bookingDetails }) => (
+import Image from "next/image";
+
+const OrderSummary: React.FC<{ bookingDetails: any }> = ({
+  bookingDetails,
+}) => (
   <div className="bg-white p-6 shadow-sm max-h-fit rounded-lg font-quicksand">
     <h2 className="text-xl font-semibold">Review Order Details</h2>
     <div className="flex flex-col items-start p-3">
-      <img src="/assets/images/image 11.png" alt="Property" className="w-full object-cover rounded-md" />
+      <Image
+        src="/assets/images/image 11.png"
+        alt="Property"
+        className="w-full object-cover rounded-md"
+      />
       <div className="mt-3">
         <h3 className="text-lg font-semibold">{bookingDetails.propertyName}</h3>
         <p className="text-sm text-gray-500">4.76 (345 reviews)</p>
-        <p className="text-sm text-gray-500">{bookingDetails.startDate} • {bookingDetails.totalNights} Nights</p>
+        <p className="text-sm text-gray-500">
+          {bookingDetails.startDate} • {bookingDetails.totalNights} Nights
+        </p>
       </div>
     </div>
 

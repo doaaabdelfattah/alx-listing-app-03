@@ -1,6 +1,5 @@
-import { HERO_IMAGE } from "@/constants";
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
-import Card from "@/components/common/Card";
+
 import AllCards from "@/components/common/AllCards";
 export default function Home() {
   return (

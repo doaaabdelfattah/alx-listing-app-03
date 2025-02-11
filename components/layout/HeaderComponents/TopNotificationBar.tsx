@@ -1,5 +1,5 @@
 import React from "react";
-import CaseIcon from "../../../public/Case Minimalistic.svg";
+
 import Image from "next/image";
 import Button from "@/components/common/Button";
 
