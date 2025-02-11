@@ -7,7 +7,7 @@ import "swiper/css/scrollbar";
 // import Swiper core and required modules
 import { Scrollbar } from "swiper/modules";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 const Slider = () => {
   // const router = useRouter(); // Get the current route
 
